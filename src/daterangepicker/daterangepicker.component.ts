@@ -722,7 +722,7 @@ export class DaterangepickerComponent implements OnInit, OnChanges {
       const currentYear: number = calendar[1][1].year();
       const realCurrentYear: number = dayjs().utc(true).year();
       const maxYear: number = (maxDate && maxDate.year()) || realCurrentYear + 5;
-      const minYear: number = (minDate && minDate.year()) || realCurrentYear - 50;
+      const minYear: number = (minDate && minDate.year()) || realCurrentYear - 100;
       const inMinYear: boolean = currentYear === minYear;
       const inMaxYear: boolean = currentYear === maxYear;
       const years: number[] = [];
